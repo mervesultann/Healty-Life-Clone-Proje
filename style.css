@@ -1,0 +1,163 @@
+:root {
+  --color1: #ebb211;
+  --color2: #04d5fa;
+  --color3: #000000;
+  --color4: #ffffff;
+  --color5: #ce1465;
+  --color6: #cdcdcd;
+  --color7: rgb(44, 18, 136);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header .topbar {
+  background-color: var(--color1);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px) {
+  .header .topbar {
+    background-color: var(--color1);
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header .topbar ul {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .header .topbar .social {
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.header .topbar ul {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.header .topbar ul li {
+  color: var(--color5);
+}
+.header .topbar ul li i {
+  margin-right: 7px;
+}
+
+.header .topbar ul a {
+  text-decoration: none;
+  color: var(--color3);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.header .topbar ul a:hover {
+  color: var(--color5);
+}
+
+.header .topbar .social {
+  font-size: 1.5rem;
+}
+.header .topbar .social li:nth-child(1) i {
+  color: var(--color7);
+}
+.header .topbar .social li:nth-child(2) i {
+  color: var(--color2);
+}
+.header .topbar .social li:nth-child(3) i {
+  color: var(--color5);
+}
+
+.navbar-brand img {
+  width: 400px;
+}
+
+.nav-item a {
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+.nav-item a:hover {
+  color: var(--color2);
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  color: var(--color3);
+}
+
+.carousel .carousel-inner .carousel-item .carousel-caption h5 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+}
+
+.main .why-us {
+  position: relative;
+  top: -70px;
+}
+
+.main .why-us i {
+  font-size: 4rem;
+  color: var(--color5);
+  margin-bottom: 10px;
+}
+
+.main .why-us h5 {
+  font-size: 2rem;
+}
+
+form {
+  background-color: var(--color6);
+}
+
+footer {
+  background-color: #ebb211;
+}
+
+footer h5 {
+  color: var(--color5);
+  font-size: 3rem;
+}
+
+footer .list-unstyled a {
+  text-decoration: none;
+  color: var(--color3);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+footer .list-unstyled a:hover {
+  color: var(--color5);
+}
+
+footer span i {
+  color: var(--color5);
+  font-size: 1.2rem;
+}
